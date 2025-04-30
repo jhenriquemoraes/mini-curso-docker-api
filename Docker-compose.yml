@@ -1,0 +1,31 @@
+services:
+  mongo:
+    image: mongo
+    container_name: mongo-test
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  backend:
+    build: ./back-end/test-fastapi  # Caminho para a pasta do backend (ajuste se necessário)
+    container_name: backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URI=mongodb://mongo:27017
+    volumes:
+      - ./back-end/test-fastapi:/app  # Ajuste aqui para corresponder à pasta correta do seu backend
+
+  frontend:
+    build: ./front-end/front-end-organizador  # Caminho do frontend
+    container_name: frontend
+    ports:
+      - "5173:80"  # Se seu Vite está na porta 5173, mapeie corretamente
+    depends_on:
+      - backend
+
+volumes:
+  mongo_data:
