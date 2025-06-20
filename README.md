@@ -24,10 +24,10 @@ https://www.notion.so/Mini-Curso-Montando-uma-API-full-stack-com-Cont-ineres-1e5
 - Swagger UI para testes
 
 ## 📦 Estrutura
-/api
-└── app.py
-└── requirements.txt
-/docker-compose.yml
+- /api
+  └── app.py
+  └── requirements.txt
+  /docker-compose.yml
 /Dockerfile
 /frontend/ (opcional)
 /README.md
