@@ -6,11 +6,11 @@ Este repositório contém os arquivos utilizados no mini curso ministrado por mi
 
 ## 📚 Conteúdo do Mini Curso
   
-  Introdução ao Docker e Docker Compose
-  Criação da API REST com FastAPI
-  Criação de imagem e container da API
-  Integração com banco de dados
-  Deploy local com Docker Compose
+  - Introdução ao Docker e Docker Compose
+  - Criação da API REST com FastAPI
+  - Criação de imagem e container da API
+  - Integração com banco de dados
+  - Deploy local com Docker Compose
 
  ### Link da apresentação  
 https://www.notion.so/Mini-Curso-Montando-uma-API-full-stack-com-Cont-ineres-1e5d874b17c0803599fddeceeef4edb1?pvs=4
